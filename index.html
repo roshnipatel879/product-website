@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Delicious and refreshing ice cream flavors at SweetCreams!">
+  <title>SweetCreams - Ice Cream Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">🍦 SweetCreams</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-text">
+      <h1>Welcome to SweetCreams</h1>
+      <p>Discover over 10 delightful ice cream flavors</p>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We serve handcrafted ice creams made with love and natural ingredients. Come indulge in our creamy creations!</p>
+  </section>
+
+  <section id="menu" class="menu">
+    <h2>Our Flavors</h2>
+    <div class="flavor-grid">
+      <div class="flavor-card">🍓 Strawberry Delight</div>
+      <div class="flavor-card">🍫 Choco Lava</div>
+      <div class="flavor-card">🍦 Vanilla Bean</div>
+      <div class="flavor-card">🥭 Mango Mania</div>
+      <div class="flavor-card">🫐 Blueberry Swirl</div>
+      <div class="flavor-card">🍌 Banana Split</div>
+      <div class="flavor-card">🥥 Coconut Crunch</div>
+      <div class="flavor-card">☕ Coffee Crave</div>
+      <div class="flavor-card">🍪 Cookie Dough</div>
+      <div class="flavor-card">🍒 Cherry Pop</div>
+      <div class="flavor-card">🥜 Peanut Butter Bliss</div>
+    </div>
+  </section>
+
+  <section id="gallery" class="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery-grid">
+      <img src="1.jpg" alt="Ice Cream 1" />
+      <img src="2.png" alt="Ice Cream 2" />
+      <img src="3.webp" alt="Ice Cream 3" />
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 SweetCreams. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js">document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  alert('Thank you for contacting us!');
+});
+</script>
+</body>
+</html>
